@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Coders Library</title>
+<meta charset="UTF-8 ">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="finalpic1.css">
+    <!---we had linked our css file----->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <style>
+ .footer{
+	background-color: crimson;
+	padding: 10px;
+	text-align: center;
+}
+.fa{
+	padding:5px;
+	font-size:35px;
+	width:45px;
+	text-align: center;
+	text-decoration: none;
+	margin:5px 2px;
+}
+
+.fa:hover{
+   font-size:35px;
+	cursor:pointer;
+	transform: scale(1.03);
+	color: thistle;
+}
+.fa-facebook{
+	border-width: 3px;
+	color:white;
+}
+
+.fa-twitter{
+	border-width: 3px;
+	color:white;
+}
+.fa-instagram{
+	border-width: 3px;
+	color:white;
+}
+.fa-linkedin{
+	border-width: 3px;
+	color:white;
+}
+
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.full-page
+{
+background-color:crimson;
+color:white;
+padding:1%;
+
+}
+.navbar
+{
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    padding-right: 10px;
+    padding-top: 15px;
+     padding-bottom:0px;
+}
+nav
+{
+    flex: 1;
+    text-align: right;
+
+}
+nav ul 
+{
+    display: inline-block;
+    list-style: none;
+}
+nav ul li
+{
+    display: inline-block;
+    margin-right: 70px;
+}
+nav ul li a
+{
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    font-family:"Times New Roman",Times,serif;
+}
+nav ul li button
+{
+    font-size: 20px;
+    color: white;
+    outline: none;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+  font-family:"Times New Roman",Times,serif;
+}
+nav ul li button:hover
+{
+    color: aqua;
+}
+nav ul li a:hover
+{
+    color: aqua;
+}
+a
+{
+    text-decoration: none;
+    color: palevioletred;
+    font-size: 28px;
+}
+#login-form
+{
+    display: none;
+}
+.form-box
+{
+    width:380px;
+	height:480px;
+	position:relative;
+	margin:2% auto;
+	background:rgba(0,0,0,0.3);
+	padding:10px;
+    overflow: hidden;
+}
+.button-box
+{
+	width:220px;
+	margin:35px auto;
+	position:relative;
+	box-shadow: 0 0 20px 9px #ff61241f;
+	border-radius: 30px;
+}
+.toggle-btn
+{
+	padding:10px 30px;
+	cursor:pointer;
+	background:transparent;
+	border:0;
+	outline: none;
+	position: relative;
+}
+#btn
+{
+	top: 0;
+	left:0;
+	position: absolute;
+	width: 110px;
+	height: 100%;
+	background: #F3C693;
+	border-radius: 30px;
+	transition: .5s;
+}
+.input-group-login
+{
+	top: 150px;
+	position:absolute;
+	width:280px;
+	transition:.5s;
+}
+.input-group-register
+{
+    top: 120px;
+	position:absolute;
+	width:280px;
+	transition:.5s;
+}
+.input-field
+{
+	width: 100%;
+	padding:10px 0;
+	margin:5px 0;
+	border-left:0;
+	border-top:0;
+	border-right:0;
+	border-bottom: 1px solid #999;
+	outline:none;
+	background: transparent;
+}
+.submit-btn
+{
+	width: 85%;
+	padding: 10px 30px;
+	cursor: pointer;
+	display: block;
+	margin: auto;
+	background: #F3C693;
+	border: 0;
+	outline: none;
+	border-radius: 30px;
+}
+.check-box
+{
+	margin: 30px 10px 34px 0;
+}
+span
+{
+	color:#777;
+	font-size:12px;
+	bottom:68px;
+	position:absolute;
+}
+#login
+{
+	left:50px;
+}
+#login input
+{
+	color:white;
+	font-size:15;
+}
+#register
+{
+	left:450px;
+}
+#register input
+{
+	color:white;
+	font-size: 15;
+}
+.section1, .section2, .section3
+{
+	min-height:75vh;
+	display:block;
+}div.heading 
+{
+color:white;
+background-color:crimson; 
+}
+div.image
+{
+	display:block;
+	margin-left:auto;
+	text-align:right;
+}
+div.course
+{
+	background-color:darkslategrey;
+	padding:50px;
+	float:left;
+}
+div.headingstyle
+{
+	font-family:"Times New Roman",Times,serif;
+}
+div.courseimage {
+  width: 85%;
+  background-color:white;
+  text-align: center;
+  margin-bottom: 10px;
+  padding:2%;
+}
+div.courseimage1 {
+  text-align:center;
+}
+.button
+{
+	 background-color:darkslategrey;
+  color:white;
+   padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 6px;
+     padding-bottom:6px;
+  text-align: center;
+  cursor: pointer;
+  border-radius:35px;
+  font-size:15px;
+}
+div.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+div.contributerbgc
+{
+	background-color: Linen;
+	 padding-left: 3%;
+    padding-right: 10px;
+    padding-top: 6px;
+     padding-bottom:6px;
+     text-align: center;
+}
+div.contributerimage
+{
+	border-radius:50%;
+}
+
+
+
+</style>
+</head>
+<body>
+	<div class="sticky">
+	<div class="heading">
+        <div class="navbar">
+	<div style="text-align:left;color:white"><h2 style="font-size:30px">CODERS LIBRARY</h2></div>
+            <nav>
+                <ul id='MenuItems'>
+                	<div class="headingstyle">
+					<li><a href='#home'><h4>HOME</h4></a></li>
+                    <li><a href='#courses'><h4>COURSES</h4></a></li>
+                    <li><a href='#about'><h4>ABOUT</h4></a></li>
+                    <li><button class='loginbtn' onclick="document.getElementById('login-form').style.display='block'" style="width:auto;"><h4>LOGIN</h4></button></li></div>
+				</ul>
+            </nav>
+    </div>
+</div>
+     <div class="full-page">
+        <div id='login-form'class='login-page'>
+            <div class="form-box">
+                <div class='button-box'>
+                    <div id='btn'></div>
+                    <button type='button'onclick='login()'class='toggle-btn'>Log In</button>
+                    <button type='button'onclick='register()'class='toggle-btn'>Register</button>
+                </div>
+                <form id='login' class='input-group-login'>
+                    <input type='text'class='input-field'placeholder='Email Id' required >
+		    <input type='password'class='input-field'placeholder='Enter Password' required>
+		    <input type='checkbox'class='check-box'><span>Remember Password</span>
+		    <button type='submit'class='submit-btn'>Log in</button>
+		 </form>
+		 <form id='register' class='input-group-register'>
+		     <input type='text'class='input-field'placeholder='First Name' required>
+		     <input type='text'class='input-field'placeholder='Last Name ' required>
+		     <input type='email'class='input-field'placeholder='Email Id' required>
+		     <input type='password'class='input-field'placeholder='Enter Password' required>
+		     <input type='password'class='input-field'placeholder='Confirm Password'  required>
+		     <input type='checkbox'class='check-box'><span>I agree to the terms and conditions</span>
+                    <button type='submit'class='submit-btn'>Register</button>
+	         </form>
+            </div>
+    </div>
+    </div>
+    <script>
+        var x=document.getElementById('login');
+		var y=document.getElementById('register');
+		var z=document.getElementById('btn');
+		function register()
+		{
+			x.style.left='-400px';
+			y.style.left='50px';
+			z.style.left='110px';
+		}
+		function login()
+		{
+			x.style.left='50px';
+			y.style.left='450px';
+			z.style.left='0px';
+		}
+	</script>
+	<script>
+        var modal = document.getElementById('login-form');
+        window.onclick = function(event) 
+        {
+            if (event.target == modal) 
+            {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+</div>
+</div><br><br><br><br><br><br><br>
+<section id="home" class="section1">
+<table border="0" width="100%">
+<tr>	
+<td><p style="text-align:center;font-size:50px;font-style:italic">BE YOUR BEST<br><br>LEARN FROM THE BEST.<br><br>HAPPY CODING...</p></td>
+<td>
+	<div class="image">
+	<img src="https://image.freepik.com/free-vector/software-developer-programmer_24908-49158.jpg" alt="image" style="width:450px;height:500px">;
+</div></td>
+</tr>
+</table>
+</section>
+<section id="courses" class="section2">
+	<br><br><br><br>
+<div class="course">
+<p style="color:white;text-align:center;font-size:30px">WHAT WOULD YOU LIKE TO LEARN?</p><br><br>
+<table border="0" width="100%" align="center">
+<tr>	
+<td>
+<div class="courseimage">
+	<img src="https://sololearnuploads.azureedge.net/uploads/courses/1073.png" alt="python" style="width:100%;height:200px;">
+	<h3 style="color:black">Python</h3>
+    <a href="https://www.w3schools.com/python/default.asp" target="_blank"><button class="button">Get Started</button></a>
+</div>
+</td>
+<td>
+<div class="courseimage">
+	<img src="https://sololearnuploads.azureedge.net/uploads/courses/1014.png" alt="HTML" style="width:100%;height:200px;">
+		<h3 style="color:black">HTML</h3>
+		<a href="https://www.w3schools.com/html/default.asp" target="_blank"><button class="button">Get Started</button></a>
+</div>
+</td>
+<td>
+<div class="courseimage">
+	<img src="https://sololearnuploads.azureedge.net/uploads/courses/1059.png" alt="php" style="width:100%;height:200px;">
+	<h3 style="color:black">php</h3>
+	<a href="https://www.w3schools.com/php/default.asp" target="_blank"><button class="button">Get Started</button></a>
+</div>
+</td>
+<td>
+<div class="courseimage">
+	<img src="https://sololearnuploads.azureedge.net/uploads/courses/1060.png" alt="SQL" style="width:100%;height:200px;">
+    <h3 style="color:black">SQL</h3></a>
+	<a href="https://www.w3schools.com/sql/default.asp" target="_blank"><button class="button">Get Started</button></a>
+</div>
+</td>
+<td>
+<div class="courseimage">
+	<img src="https://sololearnuploads.azureedge.net/uploads/courses/1023.png" alt="CSS" style="width:100%;height:200px;">
+	<h3 style="color:black">CSS</h3>
+	<a href="https://www.w3schools.com/css/default.asp" target="_blank"><button class="button">Get Started</button></a>
+</div>
+</td>
+</tr><br>
+
+<tr><td>
+<br><br><br><br>
+</td></tr>
+
+<tr>
+<td>
+<div class="courseimage">
+	<img src="https://sololearnuploads.azureedge.net/uploads/courses/1068.png" alt="Java" style="width:100%;height:200px;">
+	<h3 style="color:black">Java</h3>
+	<a href="https://www.w3schools.com/java/default.asp" target="_blank"><button class="button">Get Started</button></a>
+</div>
+</td>
+<td>
+<div class="courseimage">
+	<img src="https://sololearnuploads.azureedge.net/uploads/courses/1051.png" alt="C++" style="width:100%;height:200px;">
+	<h3 style="color:black">C++</h3>
+	<a href="https://www.w3schools.com/cpp/default.asp" target="_blank"><button class="button">Get Started</button></a>
+</div>
+</td>
+<td>
+<div class="courseimage">
+	<img src="https://sololearnuploads.azureedge.net/uploads/courses/1097.png" alt="ReactJS" style="width:100%;height:200px;">
+	<h3 style="color:black">ReactJS</h3>
+	<a href="https://www.w3schools.com/react/default.asp" target="_blank"><button class="button">Get Started</button></a>
+</div>
+</td>
+<td>
+<div class="courseimage">
+	<img src="https://sololearnuploads.azureedge.net/uploads/courses/1082.png" alt="jquery" style="width:100%;height:200px;">
+	<h3 style="color:black">jQuery</h3>
+	<a href="https://www.w3schools.com/jquery/default.asp" target="_blank"><button class="button">Get Started</button></a>
+</div>
+</td>
+<td>
+<div class="courseimage">
+	<img src="https://sololearnuploads.azureedge.net/uploads/courses/1089.png" alt="C" style="width:100%;height:200px;">
+	<h3 style="color:black">C</h3>
+	<a href="https://www.javatpoint.com/c-programming-language-tutorial" target="_blank"><button class="button">Get Started</button></a>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</section><br><br><br><br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<section id="about" class="section3">
+	<br><br><br><br><br><br>
+	<h3 style="text-align:center;font-size:40px">About</h3><br>
+    <p style="font-size:20px;text-align:center;padding:1%">Don't have a computer science degree ? Don't worry , you can still make a career for yourself as a programmer.But if you want to land a quality job as a programmer.Here at Coders Library we inspire and endeavour you to learn programming languages and scripting languages from the basic to core level.We offer courses like Python , HTML , php , SQL , CSS , Java , C++ , ReactJS , jQuery , C.</p><br>
+    <h4 style="font-size:25px;text-align:center;">What are you waiting for...</h4><br>
+    <h1 style="text-align:center;font-size:40px">Signup , Learn and Code</h1><br>
+    </section>
+    <div class="contributerbgc">
+    <h3 style="text-align:center;font-size:40px">Contributers</h3><br>
+    <table border="0" width="100%">
+    	<tr>
+    		<td>
+    			<div class="contributerimage"><img src="C:\Users\Kotra\Desktop\shruthi\shruthi.jpeg" alt="Contributer image" style="height:125px;width:115px;border-radius:50%"></div>
+    			<br><h4>G.Shruthi Reddy</h4><br><p>shruthi.garlapati03@gmail.com</p></td>
+    		<td><div class="contributerimage"><img src="C:\Users\Kotra\Desktop\shreya\shreya.jpeg" alt="Contributer image" style="height:125px;width:115px;border-radius:50%"></a></div>
+    			<br><h4>K.Shreya</h4><br><p>shreyakotra1@gmail.com</p></td>
+    		<td><div class="contributerimage"><img src="C:\Users\Kotra\Desktop\manaswini\manaswini.jpeg" alt="Contributer image" style="height:125px;width:115px;border-radius:50%"></a></div>
+    			<br><h4>Manaswini Reddy</h4><br><p>sarasanimanaswini@gmail.com</p></td>
+    	</tr>
+    </table>
+</div>
+    <div class="footer">
+    <p><h3> Contact Us </h3> </p>
+    <a href="https://www.facebook.com/codersspot.in/?ref=page_internal"><i class="fa fa-facebook"></i></a>
+    <i class="fa fa-twitter"></i>
+    <i class="fa fa-instagram"></i>
+    <i class="fa fa-linkedin" ></i>
+    <p>Copyright &#169; 2021 - <b>Coders Library. </b>All Rights Reserved.</p>
+</div>
+</body>
+</html>
